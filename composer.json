@@ -1,0 +1,12 @@
+{
+  "name": "stirlingmerge/stirlingmerge",
+  "description": "Merge images to PDF via Stirling PDF",
+  "type": "nextcloud-app",
+  "license": "AGPL-3.0-only",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "OCA\\StirlingMerge\\": "lib/"
+    }
+  }
+}
