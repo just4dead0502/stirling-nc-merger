@@ -1,0 +1,6 @@
+stirlingmerge/node_modules/
+*.tar.gz
+deploy.py
+.claude/
+action-plan.md
+stirlingmerge-backup-working.tar.gz

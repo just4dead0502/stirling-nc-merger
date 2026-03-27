@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>stirlingmerge</id>
+    <name>Merge to PDF</name>
+    <summary>Merge selected images into a PDF using Stirling PDF</summary>
+    <description>Select two or more images in Nextcloud Files and merge them into a single PDF via a Stirling PDF backend. Works for all server users. The output PDF is saved in the same folder as the source images.</description>
+    <version>1.0.0</version>
+    <licence>agpl</licence>
+    <author>stirlingmerge</author>
+    <namespace>StirlingMerge</namespace>
+    <main-class>OCA\StirlingMerge\AppInfo\Application</main-class>
+    <category>files</category>
+    <!-- Ship in the server apps dir so it is available to every user automatically -->
+    <types>
+        <filesystem/>
+    </types>
+    <dependencies>
+        <!-- min 32; no upper cap so the app survives NC upgrades unless API breaks -->
+        <nextcloud min-version="32" max-version="99"/>
+    </dependencies>
+    <!-- The OCS endpoint is reachable from mobile clients (NC Android/iOS) -->
+    <!-- via standard OCS API — no additional declarations needed             -->
+</info>
